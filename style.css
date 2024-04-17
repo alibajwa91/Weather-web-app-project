@@ -1,98 +1,131 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif ;
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
-   
+
 }
-body{
+
+body {
     display: flex;
     background-image: url('img/bg.gif');
     background-size: cover;
     background-position: center;
-    
 
-    
+
+
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(97deg, rgba(34,195,77,0.9864320728291317) 8%, rgba(58,70,233,1) 100%);
+    background: linear-gradient(97deg, rgba(34, 195, 77, 0.9864320728291317) 8%, rgba(58, 70, 233, 1) 100%);
     color: #fff;
     margin: 100px auto 0px;
     border-radius: 10px;
     padding: 40px 35px;
-    text-align: center; 
+    text-align: center;
 
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.search input{
+
+.search input {
     width: 49vh;
     height: 7.5vh;
     border: 0;
     border-radius: 23px;
     background-color: rgb(255, 255, 255);
-    padding-left: 14px ;
+    padding-left: 14px;
+    font-size: large;
+
 }
 
-.search .btn{
+.search .btn {
     border: 0;
     outline: 0;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
 }
-.btn-img{
+
+.btn-img {
     width: 25px;
 }
 
-.weather-icon{
+.weather-icon {
     width: 137px;
     margin-top: 23px;
 }
 
-.weather h1{
+.weather h1 {
     font-size: 60px;
     font-weight: lighter;
 }
 
-.weather h2{
+.weather h2 {
     font-size: 48px;
-    font-weight: bolder;    
+    font-weight: bolder;
 }
-.details{
+
+.details {
     display: flex;
     text-align: center;
     justify-content: space-between;
-margin-top: 50px;
+    margin-top: 50px;
 }
-.col{
+
+.col {
     display: flex;
     text-align: left;
     align-items: center;
 }
-.col img{
+
+.col img {
     width: 45px;
     margin-right: 12px;
 }
-.humidity, .wind{
+
+.humidity,
+.wind {
     font-size: 23px;
 }
-.weather{
+
+.weather {
     display: none;
 }
-.error{
+
+.error {
     display: none;
     color: rgb(255, 197, 197);
     text-align: left;
     padding-left: 23px;
     margin-left: 9px;
 
+}
+
+@media(max-width:470px) {
+    .search .btn {
+        border-radius: 50%;
+        height: 45px;
+        width: 75px;
+
+    }
+
+}
+
+@media(max-width:380px) {
+    .search .btn {
+        border-radius: 50%;
+        height: 45px;
+        width: 90px;
+
+    }
 }
